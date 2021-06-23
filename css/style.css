@@ -1,0 +1,17 @@
+.array-container{
+    position: absolute;
+    margin-top: 20vh;
+    left: 50px;
+}
+
+.array-bar{
+    height: 30px;
+    width: 4px;
+    background-color: rgb(180, 194, 255);
+    margin: 1px;
+    display: inline-block;
+}
+
+.slider-container{
+    width: 20%;
+}
