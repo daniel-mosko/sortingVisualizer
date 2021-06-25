@@ -7,8 +7,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-        integrity="undefined" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,18 +16,17 @@
         <h1>Triedenie</h1>
         <button type="button" class="btn btn-sm" id="new-array">Generovať nový list</button>
         <button type="button" class="btn btn-sm" id="bubble-sort">Bubble sort</button>
+        <button type="button" class="btn btn-sm" id="bubble-sort">Merge sort</button>
         <div class="slider-container">
-            <input type="range" class="form-range" min="20" max="200" step="20" id="sizeRange" value="20">
+            <input type="range" class="form-range" min="20" max="200" step="20" id="array-slider" value="20" onmousemove="document.getElementById('array-length').innerHTML= 'Dĺžka listu: ' + this.value;">
         </div>
-
+        <p id="array-length">Dĺžka listu: </p>
         <div class="array-container" id="array-container">
-
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
     <script src="js/sorting.js"></script>
+    <script src="js/bubbleSort.js"></script>
 </body>
 
 </html>

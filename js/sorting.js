@@ -3,8 +3,9 @@ const array = [];
 document.getElementById("new-array").addEventListener("click", setSize);
 document.getElementById("bubble-sort").addEventListener("click", bubbleSort);
 
+
 function setSize() {
-    var size = document.getElementById("sizeRange").value;
+    var size = document.getElementById("array-slider").value;
     deleteArray();
     generateArray(size);
 }
@@ -46,16 +47,24 @@ async function bubbleSort() {
     for (i = 0; i < array.length; i++) {
         for (j = 0; j < array.length - 1; j++) {
             if (array[i] < array[j]) {
-                await timer(1);
+                
                 const b1 = document.getElementById(array[i].toString()); // i
                 const b2 = document.getElementById(array[j].toString()); // j
+
+                b1.style.backgroundColor = "red";
+                b2.style.backgroundColor = "red";
+                await timer(1);
                 
+
                 var ts = b1.style.height;
                 var ti = b1.id;
                 b1.style.height = b2.style.height;
                 b1.id = b2.id;
                 b2.style.height = ts;
                 b2.id = ti;
+
+                b1.style.backgroundColor = "rgb(180, 194, 255)";
+                b2.style.backgroundColor = "rgb(180, 194, 255)";
 
                 var temp = array[i]
                 array[i] = array[j];
@@ -66,7 +75,12 @@ async function bubbleSort() {
     disableButtons(false);
 }
 
+async function mergeSort(){
+    
+}
+
 function disableButtons(bool){
     document.getElementById("new-array").disabled = bool;
     document.getElementById("bubble-sort").disabled = bool;
+    document.getElementById("array-slider").disabled = bool;
 }

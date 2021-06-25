@@ -1,6 +1,6 @@
 .array-container{
     position: absolute;
-    margin-top: 20vh;
+    margin-top: 10vh;
     left: 50px;
 }
 
@@ -13,5 +13,9 @@
 }
 
 .slider-container{
-    width: 20%;
+    width: 40%;
+}
+
+.content{
+    padding: 2vh;
 }
