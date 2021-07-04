@@ -1,10 +1,10 @@
-.array-container{
+.array-container {
     position: absolute;
     margin-top: 10vh;
     left: 50px;
 }
 
-.array-bar{
+.array-bar {
     height: 30px;
     width: 4px;
     background-color: rgb(180, 194, 255);
@@ -12,10 +12,10 @@
     display: inline-block;
 }
 
-.slider-container{
+.slider-container {
     width: 40%;
 }
 
-.content{
+.content {
     padding: 2vh;
 }
